@@ -2,41 +2,39 @@
   --color-accent: #ffe355;
 }
 
-/* Global heading styles */
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.1; /* Tighter line spacing for headings */
-  text-wrap: balance; /* Ensures balanced line wrapping for readability */
-  margin: 0; /* Remove default margins to avoid inconsistent spacing */
+  line-height: 1.1;
+  text-wrap: balance;
+  margin: 0;
 }
 
-/* Specific heading sizes */
 h1 {
-  font-size: 300%; /* 3 times the body text size */
-  margin-bottom: 0.5em; /* Add spacing below for separation */
+  font-size: 250%;
+  margin-bottom: 0.5em;
 }
 
 h2 {
-  font-size: 200%; /* 2 times the body text size */
-  margin-bottom: 0.5em; /* Spacing for separation */
+  font-size: 165%;
+  margin-bottom: 0.5em;
 }
 
 h3 {
-  font-size: 150%; /* 1.5 times the body text size */
+  font-size: 125%;
   margin-bottom: 0.4em;
 }
 
 h4 {
-  font-size: 125%; /* Slightly larger than body text */
+  font-size: 100%;
   margin-bottom: 0.3em;
 }
 
 h5 {
-  font-size: 110%; /* Just above body text size */
+  font-size: 100%;
   margin-bottom: 0.2em;
 }
 
 h6 {
-  font-size: 100%; /* Same as body text but styled as a heading */
+  font-size: 100%;
   margin-bottom: 0.2em;
 }
 
@@ -76,6 +74,13 @@ nav a:hover {
   padding-bottom: 0.4rem;
   background-color: oklch(from var(--color-accent) 95% 5% h);
 }
+
+.home {
+  display: flex;              /* Enables Flexbox for layout */
+  flex-direction: column;     /* Stacks children vertically */
+  text-align: center;       /* Centers text alignment (optional) */
+}
+
 
 input, 
 textarea, 
@@ -121,13 +126,7 @@ form button:hover {
   background-color: oklch(from var(--color-accent) 95% 5% h);
 }
 
-.contact p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  margin-bottom: 1em;
-}
-
-.contact a {
+.contact {
   font-size: 1.2rem;
   line-height: 1.5;
   margin-bottom: 1em;
@@ -142,9 +141,9 @@ form button:hover {
 
 .projects article {
   display: grid;
-  grid-template-rows: subgrid; /* Align rows with subgrid */
-  grid-row: span 3; /* Ensure consistent row height across articles */
-  gap: 1em; /* Add spacing between article contents */
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  gap: 1em;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 1em;
@@ -154,7 +153,7 @@ form button:hover {
 }
 
 .projects h2 {
-  margin: 0; /* Remove default margin for better alignment */
+  margin: 0;
   font-size: 1.25em;
   line-height: 1.2;
   word-break: break-word;
@@ -170,6 +169,23 @@ form button:hover {
   font-size: 1em;
   color: #555;
   margin: 0.5em 0 0;
+}
+
+.projects article ul {
+  padding-left: 1em;
+  margin: 0;
+  margin: 0 0 0.5em 0;
+}
+
+.projects article ul li {
+  margin: 0;
+  padding: 0;
+  margin: 0 0 0.5em 0;
+}
+
+
+.resume article {
+  margin-bottom: 1.5em;
 }
 
 
