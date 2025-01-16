@@ -14,12 +14,12 @@ h1 {
 }
 
 h2 {
-  font-size: 165%;
+  font-size: 175%;
   margin-bottom: 0.5em;
 }
 
 h3 {
-  font-size: 125%;
+  font-size: 130%;
   margin-bottom: 0.4em;
 }
 
@@ -183,10 +183,20 @@ form button:hover {
   margin: 0 0 0.5em 0;
 }
 
+.resume {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
 
 .resume article {
-  margin-bottom: 1.5em;
+  padding: 1em 0;
+  border-bottom: 1px solid #ddd;
 }
+
 
 
 
