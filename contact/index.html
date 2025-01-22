@@ -5,38 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Derrick Nguyen</title>
     <link rel="stylesheet" href="../style.css">
+    <script type="module" src="../global.js"></script>
 </head>
 <body>
-    <nav>
-        <a href="https://derricknguyen12.github.io/portfolio/index.html">Home</a>
-        <a href="https://derricknguyen12.github.io/portfolio/contact/index.html" class="current">Contact</a>
-        <a href="https://derricknguyen12.github.io/portfolio/resume/index.html">Resume</a>
-        <a href="https://derricknguyen12.github.io/portfolio/projects/index.html">Projects</a>
-        <a href="https://www.linkedin.com/in/derricknguyen12/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/derricknguyen12" target="_blank">GitHub</a>
-    </nav>
+
     <h1>Contact</h1>
     <p class="contact">If you'd like to reach out, please connect with me via LinkedIn or use the contact form below:</p>
     <a class="contact" href="https://www.linkedin.com/in/derricknguyen12/" target="_blank">LinkedIn</a>
     <br><br>
-    <form action="mailto:derrick3600@yahoo.com" method="POST">
-        <label for="email">
-            Email:
-            <input type="email" name="email" id="email" required>
-        </label>
-        <br>
+
+    <form id="contactForm" action="mailto:derrick3600@yahoo.com" method="POST">
         <label for="subject">
             Subject:
             <input type="text" name="subject" id="subject" required>
         </label>
         <br>
-        <label for="body">
+        <label for="Body">
             Message:
-            <textarea name="body" id="body" rows="5" required></textarea>
+            <textarea name="Body" id="Body" rows="5" required></textarea>
         </label>
         <br>
         <button type="submit">Submit</button>
     </form>
+
+    <script>
+    const form = document.querySelector('#contactForm');
+
+    form?.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const data = new FormData(form);
+        let url = form.action + '?';
+        for (let [name, value] of data) {
+            if (name === 'message') {
+                value = encodeURIComponent(value);
+            }
+            url += `${encodeURIComponent(name)}=${value}&`;
+        }
+
+        url = url.slice(0, -1);
+        location.href = url;
+    });
+    </script>
+
 </body>
 </html>
 

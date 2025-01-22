@@ -1,0 +1,96 @@
+console.log('IT’S ALIVE!');
+
+function $$(selector) {
+    return Array.from(document.querySelectorAll(selector));
+}
+
+let pages = [
+    { url: '', title: 'Home' },
+    { url: 'contact/', title: 'Contact' },
+    { url: 'resume/', title: 'Resume' },
+    { url: 'projects/', title: 'Projects' },
+    { url: 'https://www.linkedin.com/in/derricknguyen12/', title: 'LinkedIn' },
+    { url: 'https://github.com/derricknguyen12', title: 'GitHub' }
+];
+
+const ARE_WE_HOME = document.documentElement.classList.contains('home');
+console.log('Are we on the home page?', ARE_WE_HOME);
+
+let nav = document.createElement('nav');
+document.body.prepend(nav);
+
+for (let p of pages) {
+    let url = p.url;
+    let title = p.title;
+
+    url = !ARE_WE_HOME && !url.startsWith('http') ? '../' + url : url;
+
+    let a = document.createElement('a');
+    a.href = url;
+    a.textContent = title;
+
+    let currentPath = location.pathname.endsWith('/')
+        ? location.pathname
+        : location.pathname + '/';
+
+    let linkPath = new URL(a.href, location.origin).pathname;
+    linkPath = linkPath.endsWith('/') ? linkPath : linkPath + '/';
+
+    a.classList.toggle(
+        'current',
+        a.host === location.host && linkPath === currentPath
+    );
+
+    a.target = a.host !== location.host ? '_blank' : '_self';
+
+    nav.append(a);
+}
+
+document.body.insertAdjacentHTML(
+    'afterbegin',
+    `
+      <label class="color-scheme">
+          Theme:
+          <select id="theme-switcher">
+              <option value="automatic">Automatic</option>
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+          </select>
+      </label>
+    `
+);
+
+function updateTheme(theme) {
+    const root = document.documentElement;
+
+    if (theme === 'automatic') {
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        root.style.colorScheme = prefersDark ? 'dark' : 'light';
+        root.classList.toggle('dark', prefersDark);
+    } else {
+        root.style.colorScheme = theme;
+        root.classList.toggle('dark', theme === 'dark');
+    }
+}
+
+const themeSwitcher = document.getElementById('theme-switcher');
+
+const savedTheme = localStorage.getItem('preferred-theme') || 'automatic';
+themeSwitcher.value = savedTheme;
+updateTheme(savedTheme);
+
+themeSwitcher.addEventListener('change', (event) => {
+    const selectedTheme = event.target.value;
+    updateTheme(selectedTheme);
+
+    localStorage.setItem('preferred-theme', selectedTheme);
+});
+
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', () => {
+    const currentTheme = localStorage.getItem('preferred-theme') || 'automatic';
+    if (currentTheme === 'automatic') {
+        updateTheme('automatic');
+    }
+});
+
+  
