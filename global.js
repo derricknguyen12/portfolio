@@ -15,10 +15,10 @@ function $$(selector) {
 
 
 let pages = [
-    { url: 'index.html', title: 'Home' },
-    { url: 'contact/index.png', title: 'Contact' },
-    { url: 'resume/index.html', title: 'Resume' },
-    { url: 'projects/index.html', title: 'Projects' },
+    { url: 'portfolio/index.html', title: 'Home' },
+    { url: 'portfolio/contact/index.html', title: 'Contact' },
+    { url: 'portfolio/resume/index.html', title: 'Resume' },
+    { url: 'portfolio/projects/index.html', title: 'Projects' },
     { url: 'https://www.linkedin.com/in/derricknguyen12/', title: 'LinkedIn' },
     { url: 'https://github.com/derricknguyen12', title: 'GitHub' }
 ];
