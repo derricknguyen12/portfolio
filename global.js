@@ -49,16 +49,14 @@ for (let p of pages) {
     if (!linkPath.endsWith('/')) linkPath += '/';
     if (!currentPath.endsWith('/')) currentPath += '/';
 
+    if (a.host !== location.host) {
+        a.target = '_blank';
+    }
 
     a.classList.toggle(
         'current',
         location.host === a.host && linkPath === currentPath
     );
-
-
-    if (a.host !== location.host) {
-        a.target = '_blank';
-    }
 
     
     nav.appendChild(a);
