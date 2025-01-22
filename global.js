@@ -4,13 +4,13 @@ function $$(selector) {
     return Array.from(document.querySelectorAll(selector));
 }   
 
-let navLinks = $$("nav a");
+// let navLinks = $$("nav a");
 
-let currentLink = navLinks.find(
-  (a) => a.host === location.host && a.pathname === location.pathname
-);
+// let currentLink = navLinks.find(
+//   (a) => a.host === location.host && a.pathname === location.pathname
+// );
 
-currentLink?.classList.add("current");
+// currentLink?.classList.add("current");
 
 
 
@@ -55,17 +55,14 @@ for (let p of pages) {
         location.host === a.host && linkPath === currentPath
     );
 
-    
+
     if (a.host !== location.host) {
         a.target = '_blank';
     }
 
     
-    nav.append(a);
+    nav.appendChild(a);
 }
-
-
-
 
 
 document.body.insertAdjacentHTML(
