@@ -15,10 +15,10 @@ function $$(selector) {
 
 
 let pages = [
-    { url: 'portfolio/index.html', title: 'Home' },
-    { url: 'portfolio/contact/index.html', title: 'Contact' },
-    { url: 'portfolio/resume/index.html', title: 'Resume' },
-    { url: 'portfolio/projects/index.html', title: 'Projects' },
+    { url: 'index.html', title: 'Home' },
+    { url: 'contact/index.html', title: 'Contact' },
+    { url: 'resume/index.html', title: 'Resume' },
+    { url: 'projects/index.html', title: 'Projects' },
     { url: 'https://www.linkedin.com/in/derricknguyen12/', title: 'LinkedIn' },
     { url: 'https://github.com/derricknguyen12', title: 'GitHub' }
 ];
@@ -34,9 +34,12 @@ for (let p of pages) {
 
 
     if (!url.startsWith('http')) {
-        url = ARE_WE_HOME ? url : `../${url}`;
+        url = ARE_WE_HOME ? url : `/${url}`;
     }
 
+    if (!url.startsWith('portfolio')) {
+        url = `/portfolio${url}`;
+    }
 
     let a = document.createElement('a');
     a.href = url;
@@ -48,6 +51,7 @@ for (let p of pages) {
 
     if (!linkPath.endsWith('/')) linkPath += '/';
     if (!currentPath.endsWith('/')) currentPath += '/';
+
 
     if (a.host !== location.host) {
         a.target = '_blank';
