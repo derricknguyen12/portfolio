@@ -22,35 +22,35 @@ for (let p of pages) {
     let url = p.url;
     let title = p.title;
 
-    // Adjust relative URLs for non-home pages
+
     if (!url.startsWith('http')) {
         url = ARE_WE_HOME ? url : `../${url}`;
     }
 
-    // Create link element
+
     let a = document.createElement('a');
     a.href = url;
     a.textContent = title;
 
-    // Normalize paths for comparison
+
     let linkPath = new URL(a.href, location.origin).pathname;
     let currentPath = location.pathname;
 
     if (!linkPath.endsWith('/')) linkPath += '/';
     if (!currentPath.endsWith('/')) currentPath += '/';
 
-    // Highlight current page
+
     a.classList.toggle(
         'current',
         location.host === a.host && linkPath === currentPath
     );
 
-    // Set target for external links
+    
     if (a.host !== location.host) {
         a.target = '_blank';
     }
 
-    // Append the link to the navigation
+    
     nav.append(a);
 }
 
