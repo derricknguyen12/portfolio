@@ -14,7 +14,6 @@ let pages = [
 ];
 
 const ARE_WE_HOME = document.documentElement.classList.contains('home');
-console.log('Are we on the home page?', ARE_WE_HOME);
 
 let nav = document.createElement('nav');
 document.body.prepend(nav);
@@ -23,28 +22,28 @@ for (let p of pages) {
     let url = p.url;
     let title = p.title;
 
-    url = !ARE_WE_HOME && !url.startsWith('http') ? '../' + url : url;
+    if (!url.startsWith('http')) {
+        url = !ARE_WE_HOME ? '../' + url : url;
+    }
 
     let a = document.createElement('a');
     a.href = url;
     a.textContent = title;
 
-    let currentPath = location.pathname.endsWith('/')
-        ? location.pathname
-        : location.pathname + '/';
-
+    let currentPath = location.pathname.endsWith('/') ? location.pathname : location.pathname + '/';
     let linkPath = new URL(a.href, location.origin).pathname;
     linkPath = linkPath.endsWith('/') ? linkPath : linkPath + '/';
 
     a.classList.toggle(
         'current',
-        a.host === location.host && linkPath === currentPath
+        location.href === a.href || (location.host === a.host && linkPath === currentPath)
     );
 
     a.target = a.host !== location.host ? '_blank' : '_self';
 
     nav.append(a);
 }
+
 
 document.body.insertAdjacentHTML(
     'afterbegin',
