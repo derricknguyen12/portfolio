@@ -5,10 +5,10 @@ function $$(selector) {
 }
 
 let pages = [
-    { url: '', title: 'Home' },
-    { url: 'contact/', title: 'Contact' },
-    { url: 'resume/', title: 'Resume' },
-    { url: 'projects/', title: 'Projects' },
+    { url: '/index.html', title: 'Home' },
+    { url: '/contact/', title: 'Contact' },
+    { url: '/resume/', title: 'Resume' },
+    { url: '/projects/', title: 'Projects' },
     { url: 'https://www.linkedin.com/in/derricknguyen12/', title: 'LinkedIn' },
     { url: 'https://github.com/derricknguyen12', title: 'GitHub' }
 ];
