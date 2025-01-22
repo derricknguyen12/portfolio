@@ -52,12 +52,12 @@ for (let p of pages) {
     if (a.host !== location.host) {
         a.target = '_blank';
     }
-
-    a.classList.toggle(
-        'current',
-        location.host === a.host && linkPath === currentPath
-    );
-
+    else {
+        a.classList.toggle(
+            'current',
+            location.host === a.host && linkPath === currentPath
+        );
+    }
     
     nav.appendChild(a);
 }
