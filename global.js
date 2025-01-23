@@ -13,13 +13,13 @@ function $$(selector) {
 // currentLink?.classList.add("current");
 
 
-let pages = [
-    { url: 'index.html', title: 'Home' },
-    { url: 'contact/index.html', title: 'Contact' },
-    { url: 'resume/index.html', title: 'Resume' },
-    { url: 'projects/index.html', title: 'Projects' },
-    { url: 'https://www.linkedin.com/in/derricknguyen12/', title: 'LinkedIn' },
-    { url: 'https://github.com/derricknguyen12', title: 'GitHub' }
+let pages = [ 
+    { url: 'index.html', title: 'Home' }, 
+    { url: 'contact/index.html', title: 'Contact' }, 
+    { url: 'resume/index.html', title: 'Resume' }, 
+    { url: 'projects/index.html', title: 'Projects' }, 
+    { url: 'https://www.linkedin.com/in/derricknguyen12/', title: 'LinkedIn' }, 
+    { url: 'https://github.com/derricknguyen12', title: 'GitHub' } 
 ];
 
 const ARE_WE_HOME = document.documentElement.classList.contains('home');
@@ -31,11 +31,9 @@ for (let p of pages) {
     let url = p.url;
     let title = p.title;
 
-    if (!url.startsWith('/portfolio')) {
-        url = `/portfolio${url}`;
-    } 
-    else if (!url.startsWith('http')) {
+    if (!url.startsWith('http')) {
         url = ARE_WE_HOME ? url : `/${url}`;
+        url = `/portfolio${url}`;
     }
 
     let a = document.createElement('a');
@@ -52,7 +50,7 @@ for (let p of pages) {
         a.target = '_blank';
     } else {
         a.classList.toggle(
-            'current',
+            'current', 
             location.host === a.host && linkPath === currentPath
         );
     }
