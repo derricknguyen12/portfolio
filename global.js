@@ -31,10 +31,10 @@ for (let p of pages) {
     let url = p.url;
     let title = p.title;
 
-    if (!url.startsWith('http') && !url.startsWith('/portfolio')) {
+    if (!url.startsWith('/portfolio')) {
         url = `/portfolio${url}`;
-        url = ARE_WE_HOME ? url : `/${url}`;
-    } else if (!url.startsWith('http')) {
+    } 
+    else if (!url.startsWith('http')) {
         url = ARE_WE_HOME ? url : `/${url}`;
     }
 
