@@ -13,7 +13,6 @@ function $$(selector) {
 // currentLink?.classList.add("current");
 
 
-
 let pages = [
     { url: 'index.html', title: 'Home' },
     { url: 'contact/index.html', title: 'Contact' },
@@ -32,19 +31,17 @@ for (let p of pages) {
     let url = p.url;
     let title = p.title;
 
-
     if (!url.startsWith('http')) {
+        // Only prepend /portfolio for non-external URLs
+        if (!url.startsWith('portfolio')) {
+            url = `/portfolio${url}`;
+        }
         url = ARE_WE_HOME ? url : `/${url}`;
-    }
-
-    if (!url.startsWith('portfolio')) {
-        url = `/portfolio${url}`;
     }
 
     let a = document.createElement('a');
     a.href = url;
     a.textContent = title;
-
 
     let linkPath = new URL(a.href, location.origin).pathname;
     let currentPath = location.pathname;
@@ -52,19 +49,18 @@ for (let p of pages) {
     if (!linkPath.endsWith('/')) linkPath += '/';
     if (!currentPath.endsWith('/')) currentPath += '/';
 
-
     if (a.host !== location.host) {
         a.target = '_blank';
-    }
-    else {
+    } else {
         a.classList.toggle(
             'current',
             location.host === a.host && linkPath === currentPath
         );
     }
-    
+
     nav.appendChild(a);
 }
+
 
 
 document.body.insertAdjacentHTML(
