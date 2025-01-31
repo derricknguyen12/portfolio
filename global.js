@@ -106,4 +106,70 @@ window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', () 
     }
 });
 
-  
+
+export async function fetchJSON(url) {
+    try {
+        console.log(`Fetching JSON from: ${url}`);
+        const response = await fetch(url);
+        console.log("Response status:", response.status);
+
+        if (!response.ok) {
+            throw new Error(`Failed to fetch projects: ${response.statusText}`);
+        }
+
+        const data = await response.json();
+        console.log("Fetched projects:", data);
+        return data;
+    } catch (error) {
+        console.error('Error fetching or parsing JSON:', error);
+        return null;
+    }
+}
+
+window.fetchJSON = fetchJSON;
+
+export function renderProjects(projects, containerElement, headingLevel = 'h2') {
+    if (!containerElement || !(containerElement instanceof HTMLElement)) {
+        console.error("Invalid container element provided.");
+        return;
+    }
+
+    const validHeadings = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
+    if (!validHeadings.includes(headingLevel)) {
+        console.warn(`Invalid heading level "${headingLevel}". Defaulting to "h2".`);
+        headingLevel = 'h2';
+    }
+
+    const titleElement = document.querySelector('.projects-title');
+    if (titleElement) {
+        titleElement.textContent = `${projects.length} Projects`;
+    }
+
+    containerElement.innerHTML = '';
+
+    projects.forEach(project => {
+        const article = document.createElement('article');
+
+        const heading = document.createElement(headingLevel);
+        heading.textContent = project.title || 'Untitled Project';
+
+        const img = document.createElement('img');
+        img.src = project.image?.trim() || 'default-placeholder.png';
+        img.alt = project.title?.trim() || 'Project image';
+        img.loading = 'lazy';
+
+        const description = document.createElement('p');
+        description.textContent = project.description?.trim() || 'No description available.';
+
+        article.appendChild(heading);
+        article.appendChild(img);
+        article.appendChild(description);
+
+        containerElement.appendChild(article);
+    });
+}
+
+
+
+
+

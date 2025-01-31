@@ -1,0 +1,62 @@
+[
+    {
+        "title": "League of Legends Ban Rates",
+        "image": "league.jpg",
+        "description": "Conducted univariate and bivariate analysis on champions and enhanced the model through feature engineering."
+    },
+    {
+        "title": "Christmas Songs Manager",
+        "image": "holiday.jpg",
+        "description": "Implemented a song management app using custom data structures and enhanced user experience through input validation and exception handling."
+    },
+    {
+        "title": "Lorem Ipsum 3",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "title": "Lorem Ipsum 4",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "title": "Lorem Ipsum 5",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "title": "Lorem Ipsum 6",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "title": "Lorem Ipsum 7",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "title": "Lorem Ipsum 8",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "title": "Lorem Ipsum 9",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "title": "Lorem Ipsum 10",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "title": "Lorem Ipsum 11",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "title": "Lorem Ipsum 12",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+]
