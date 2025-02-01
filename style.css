@@ -173,7 +173,7 @@ form button:hover {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5em;
   margin: 2em 0;
 }
@@ -207,7 +207,6 @@ form button:hover {
 
 .projects p {
   font-size: 1em;
-  color: #555;
   margin: 0.5em 0 0;
 }
 
@@ -254,6 +253,41 @@ form button:hover {
 .color-scheme input {
   margin-right: 0.5rem;
 }
+
+.home section img {
+  width: 450px;
+  height: auto;
+}
+
+
+#profile-stats {
+  text-align: center;
+  margin-top: 30px;
+  font-family: Arial, sans-serif;
+}
+
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#profile-stats dt {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  grid-row: 1;
+}
+
+#profile-stats dd {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 5px 0 0;
+  grid-row: 2;
+}
+
 
 
 

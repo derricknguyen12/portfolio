@@ -1,61 +1,73 @@
 [
     {
         "title": "League of Legends Ban Rates",
-        "image": "league.jpg",
-        "description": "Conducted univariate and bivariate analysis on champions and enhanced the model through feature engineering."
+        "year": "2024",
+        "image": "https://derricknguyen12.github.io/portfolio/images/league.jpg",
+        "description": "I conducted an in-depth analysis of over 80,000 game statistics to determine whether banned champions tend to have higher win rates. This involved cleaning the dataset, performing univariate analysis on champion win rates and ban counts, and conducting bivariate analysis on pick rates, ban rates, and win rates to identify key patterns and trends. I also detected NMAR patterns and tested missingness in ban columns, improving data reliability by 25%, which enhanced feature selection for downstream modeling. Additionally, I developed a Random Forest Classifier to predict a player’s league tier based on game statistics, achieving an accuracy of 93%."
     },
     {
         "title": "Christmas Songs Manager",
-        "image": "holiday.jpg",
-        "description": "Implemented a song management app using custom data structures and enhanced user experience through input validation and exception handling."
+        "year": "2022",
+        "image": "https://derricknguyen12.github.io/portfolio/images/holiday.jpg",
+        "description": "I designed and implemented a full-featured song management application using object-oriented principles and custom data structures to optimize song upload, search, and modification functionalities. A Binary Search Tree (BST) was developed to store and retrieve song data based on artist and song name with O(log n) time complexity, while a Hash Table was integrated for fast keyword-based song lyric searches in O(1) time. Additionally, I enabled the import and export of song data through file handling, incorporating robust input validation and exception handling to enhance user experience and application stability."
     },
     {
         "title": "Lorem Ipsum 3",
+        "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
         "title": "Lorem Ipsum 4",
+        "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
         "title": "Lorem Ipsum 5",
+        "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
         "title": "Lorem Ipsum 6",
+        "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
         "title": "Lorem Ipsum 7",
+        "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
         "title": "Lorem Ipsum 8",
+        "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
         "title": "Lorem Ipsum 9",
+        "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
         "title": "Lorem Ipsum 10",
+        "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
         "title": "Lorem Ipsum 11",
+        "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
         "title": "Lorem Ipsum 12",
+        "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }

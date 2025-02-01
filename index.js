@@ -1,20 +1,25 @@
-import { fetchJSON, renderProjects } from './global.js';
+import { fetchJSON, renderProjects, fetchGitHubData} from './global.js';
 
-async function loadLatestProjects() {
-    try {
-        const projects = await fetchJSON('./lib/projects.json');
-        const latestProjects = projects.slice(0, 3);
+const projects = await fetchJSON('./lib/projects.json');
+const latestProjects = projects.slice(0, 3);
 
-        const projectsContainer = document.querySelector('.projects');
+const projectsContainer = document.querySelector('.projects');
 
-        if (projectsContainer) {
-            renderProjects(latestProjects, projectsContainer, 'h2');
-        } else {
-            console.error("Projects container not found.");
-        }
-    } catch (error) {
-        console.error("Error loading projects:", error);
-    }
-}
+renderProjects(latestProjects, projectsContainer, 'h3');
 
-loadLatestProjects();
+const githubData = await fetchGitHubData('amelialei');
+
+const profileStats = document.querySelector('#profile-stats');
+
+if (profileStats) {
+    profileStats.innerHTML = `
+          <dl>
+            <dt>Followers</dt><dd>${githubData.followers}</dd>
+            <dt>Following</dt><dd>${githubData.following}</dd>
+            <dt>Public Repos</dt><dd>${githubData.public_repos}</dd>
+            <dt>Public Gists</dt><dd>${githubData.public_gists}</dd>
+          </dl>
+      `;
+  }
+
+
