@@ -4,15 +4,6 @@ function $$(selector) {
     return Array.from(document.querySelectorAll(selector));
 }   
 
-// let navLinks = $$("nav a");
-
-// let currentLink = navLinks.find(
-//   (a) => a.host === location.host && a.pathname === location.pathname
-// );
-
-// currentLink?.classList.add("current");
-
-
 let pages = [ 
     { url: 'index.html', title: 'Home' }, 
     { url: 'contact/index.html', title: 'Contact' }, 
