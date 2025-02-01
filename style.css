@@ -194,13 +194,13 @@ form button:hover {
 
 .projects h2 {
   margin: 0;
-  font-size: 1.25em;
+  font-size: 1.5em;
   line-height: 1.2;
   word-break: break-word;
 }
 
 .projects img {
-  max-width: 100%;
+  max-width: 85%;
   height: auto;
   margin: 0 auto;
 }
