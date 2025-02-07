@@ -288,6 +288,82 @@ form button:hover {
   grid-row: 2;
 }
 
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.project-year {
+  font-family: Baskerville, serif;
+  font-variant-numeric: oldstyle-nums;
+  font-size: 18px;
+  font-style: italic;
+}
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+
+  overflow: visible;
+}
+
+.container {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+svg {
+  flex: 0 0 40%;
+  max-width: 50%;
+}
+
+.legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+  gap: 1em;
+  flex: 1;
+  border: 1px solid #555555;
+  padding: 1em;
+  margin-left: 1em;
+  border-radius: 8px;
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.swatch {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: var(--color);
+  border-radius: 50%;
+}
+
+.searchBar {
+  width: 100%;
+  max-width: 10000px;
+  height: 50px;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #555555;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.searchBar:focus {
+  outline: none;
+  border-color: #ffffff;
+}
+
+
+
+
+
 
 
 

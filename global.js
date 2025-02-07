@@ -149,16 +149,27 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
         img.alt = project.title?.trim() || 'Project image';
         img.loading = 'lazy';
 
+        const detailsWrapper = document.createElement('div');
+        detailsWrapper.classList.add('project-details');
+
         const description = document.createElement('p');
         description.textContent = project.description?.trim() || 'No description available.';
 
+        const year = document.createElement('p');
+        year.textContent = project.year ? `Year: ${project.year}` : 'Year: Unknown';
+        year.classList.add('project-year');
+
+        detailsWrapper.appendChild(description);
+        detailsWrapper.appendChild(year);
+
         article.appendChild(heading);
         article.appendChild(img);
-        article.appendChild(description);
+        article.appendChild(detailsWrapper);
 
         containerElement.appendChild(article);
     });
 }
+
 
 export async function fetchGitHubData(username) {
     return fetchJSON(`https://api.github.com/users/${username}`);
