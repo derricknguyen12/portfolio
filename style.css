@@ -360,6 +360,33 @@ svg {
   border-color: #ffffff;
 }
 
+&:has(path:hover) {
+  path:not(:hover) {
+    opacity: 0.5;
+  }
+}
+
+path {
+  transition: 300ms;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+}
+
+.selected:is(path) {
+  fill: var(--color);
+}
+
+.selected:is(li) {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+path {
+  cursor: pointer;
+}
+
 
 
 
