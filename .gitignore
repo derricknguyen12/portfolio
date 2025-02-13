@@ -1,5 +1,2 @@
-# Ignore the generated CSV file
 meta/loc.csv
-
-# Ignore all dependencies installed by npm
 node_modules/
