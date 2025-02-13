@@ -159,7 +159,7 @@ async function createScatterplot() {
     const rScale = d3
         .scaleSqrt() 
         .domain([minLines, maxLines])
-        .range([3, 20]);
+        .range([5, 20]);
 
     const sortedCommits = d3.sort(commits, (d) => -d.totalLines);
 

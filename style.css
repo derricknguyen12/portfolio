@@ -422,24 +422,28 @@ path {
 
 dl.info {
   display: grid;
-  grid-template-columns: 1fr 2fr; 
-  margin: 0; 
-  transition-duration: 500ms;
-  transition-property: opacity, visibility;
+  grid-template-columns: auto 1fr;
+  gap: 8px 16px;
+  align-items: center;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: opacity 500ms ease-in-out, visibility 500ms ease-in-out;
 }
 
 dl.info dt {
-  font-size: 14px;
+  font-size: 13px;
   text-transform: uppercase;
-  color: #6c757d;
-  font-weight: normal;  
-  margin: 0; 
+  font-weight: 600;
+  margin: 0;
 }
 
 dl.info dd {
   font-size: 16px;
-  margin: 0; 
-  font-weight: bold; 
+  margin: 0;
+  font-weight: 500;
+  color: #343a40;
 }
 
 .tooltip {
