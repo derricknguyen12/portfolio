@@ -55,7 +55,7 @@ function displayStats() {
   dl.append('dt').text('Total commits');
   dl.append('dd').text(commits.length);
 
-=  const numberOfFiles = d3.group(data, d => d.file).size;
+  const numberOfFiles = d3.group(data, d => d.file).size;
   dl.append('dt').text('Number of files');
   dl.append('dd').text(numberOfFiles);
 
