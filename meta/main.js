@@ -10,7 +10,7 @@ async function loadData() {
         date: new Date(row.date + 'T00:00' + row.timezone),
         datetime: new Date(row.datetime),
     }));
-    
+
     console.log(data);
     processCommits();
     console.log(commits);
