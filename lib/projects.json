@@ -20,8 +20,14 @@
     {
         "title": "Loan Approval Analysis for Young and Mid-Career Adults",
         "year": "2024",
-        "image": "https://blog.stashfin.com/wp-content/uploads/2021/06/5-Things-You-Must-Know-Before-Applying-for-a-Personal-Loan-scaled.jpg",
+        "image": "https://lendingplate.com/blog/wp-content/uploads/2023/08/Instant-Loan-Approval.png",
         "description": "This project examines how employment length, income, loan amount, and education level affect loan approval rates for young adults (18-28) compared to mid-career adults (28-38). The analysis found that mid-career adults have higher loan approval and repayment rates due to greater financial stability. Education level did not significantly impact loan approval for young adults, highlighting the importance of income and employment history. Key predictors of loan approval include income, job stability, and loan purpose. The project suggests young adults focus on stable income and employment to improve loan approval chances."
+    },
+    {
+        "title": "Interactive Bike Traffic Visualization in Boston Area",
+        "year": "2025",
+        "image": "../images/bostontraffic.png",
+        "description": "This project visualizes bike traffic in the Boston area using an interactive map and a time-based filtering slider, allowing users to explore bike arrivals and departures at stations throughout the day. Built with JavaScript, D3.js, and Mapbox GL JS, the application efficiently processes over a quarter of a million trips, leveraging performance optimizations such as pre-bucketing trips by minute for smooth interactions. Users can adjust a time slider (ranging from -1 to 1440) to filter bike trips within a 60-minute window, dynamically updating the map and station markers. The interactive map allows users to hover over or click on stations for detailed trip information, providing an engaging and responsive way to analyze urban bike traffic trends."
     },
     {
         "title": "Fantasy Football Player Recommendation System",
@@ -58,12 +64,6 @@
         "year": "2022",
         "image": "https://media.licdn.com/dms/image/v2/C5112AQGGcdUB8gcszg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1541052132937?e=2147483647&v=beta&t=DdY-42Yp9jQIxGVDAoS9mZgGUDjHsmgRBI3NFHecZ1c",
         "description": "Designed a cloud-based encrypted file storage system that allows users to securely upload, store, and retrieve files. Implemented end-to-end encryption to protect data privacy, ensuring only authorized users can access stored files. Developed a user authentication system with role-based access control to prevent unauthorized access. Integrated secure file-sharing functionality with temporary access links and expiration settings. Optimized storage efficiency with compression techniques and implemented logging mechanisms to track file activity for security auditing."
-    },
-    {
-        "title": "Custom URL Shortener",
-        "year": "2021",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8MOIVFy6_UjpvYnQlbmtFjuIYJJ2KDQetlQ&s",
-        "description": "Developed a custom URL shortener service that converts long URLs into concise, shareable links while tracking user engagement. The system includes analytics features to monitor click counts, geographic location, and referral sources. Integrated QR code generation for seamless mobile access. Designed with a scalable backend using a database to store URL mappings efficiently, ensuring fast redirections and preventing duplicate entries. Implemented security measures such as rate limiting and expiration settings to enhance usability and prevent abuse."
     },
     {
         "title": "Fitness Tracking System",
