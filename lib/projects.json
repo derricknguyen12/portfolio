@@ -24,51 +24,27 @@
         "description": "This project examines how employment length, income, loan amount, and education level affect loan approval rates for young adults (18-28) compared to mid-career adults (28-38). The analysis found that mid-career adults have higher loan approval and repayment rates due to greater financial stability. Education level did not significantly impact loan approval for young adults, highlighting the importance of income and employment history. Key predictors of loan approval include income, job stability, and loan purpose. The project suggests young adults focus on stable income and employment to improve loan approval chances."
     },
     {
+        "title": "Steam Game Recommendation System",
+        "year": "2025",
+        "image": "https://www.pcworld.com/wp-content/uploads/2024/09/Steam-logo-on-top-of-a-background-full-of-Steam-library-games-1.jpg?quality=50&strip=all",
+        "description": "A personalized game recommendation system was built using over 12,000 user-generated Steam reviews and detailed game metadata to match players with titles aligned to their tastes. Exploratory analysis revealed key trends in game popularity, review behavior, and user preferences. Feature engineering included one-hot encoding game tags, calculating sentiment scores from reviews, and normalizing playtime metrics. A Bayesian Network was constructed to model probabilistic relationships between user preferences, game features, and likelihood of recommendation. This approach enabled interpretable, data-driven recommendations that adapt to individual player behavior."
+    },
+    {
+        "title": "CGMacros: Glucose Monitor",
+        "year": "2025",
+        "image": "https://t4.ftcdn.net/jpg/05/93/20/11/360_F_593201129_RNXrSPXSWEavl8dLLc54p8OlaHIwFR6a.jpg",
+        "description": "An interactive explorable explanation was developed to visualize how different meal types and gut health levels influence glucose levels throughout the day. The project focused on modeling the impact of low, medium, and high carbohydrate meals on glucose response during breakfast, lunch, and dinner, while factoring in gut health quality—categorized as good, average, or bad. Using a combination of D3.js and Scrollama.js, the team created a scrollytelling website that guides users through dynamic, meal-specific glucose trends. The final visualization enables users to explore personalized nutrition insights through a smooth and interactive web interface."
+    },
+    {
         "title": "Interactive Bike Traffic Visualization in Boston Area",
         "year": "2025",
         "image": "../images/bostontraffic.png",
         "description": "This project visualizes bike traffic in the Boston area using an interactive map and a time-based filtering slider, allowing users to explore bike arrivals and departures at stations throughout the day. Built with JavaScript, D3.js, and Mapbox GL JS, the application efficiently processes over a quarter of a million trips, leveraging performance optimizations such as pre-bucketing trips by minute for smooth interactions. Users can adjust a time slider (ranging from -1 to 1440) to filter bike trips within a 60-minute window, dynamically updating the map and station markers. The interactive map allows users to hover over or click on stations for detailed trip information, providing an engaging and responsive way to analyze urban bike traffic trends."
     },
     {
-        "title": "Fantasy Football Player Recommendation System",
-        "year": "2024",
-        "image": "https://media.licdn.com/dms/image/v2/C5612AQFrkD5YyeikBA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1566963637949?e=2147483647&v=beta&t=tF_4lKypiW8qWXd2pWgh0UFjLt0klXL3s06vezk1q6s",
-        "description": "This project aims to build a recommendation system to help fantasy football managers decide which players to start each week. The system analyzes player performance, matchups, and positional considerations to generate weekly recommendations. Key features include evaluating player statistics such as points scored, injury status, opponent strength, and historical performance against specific teams. The system incorporates machine learning algorithms to predict optimal starting choices and utilizes data visualizations to highlight trends and insights. The goal is to assist users in making data-driven decisions to maximize their fantasy football team's performance each week."
-    },
-    {
-        "title": "E-Commerce Product Recommendation Database",
-        "year": "2024",
-        "image": "https://www.edesk.com/wp-content/uploads/2021/03/find-trending-products-sell-ecommerce.png",
-        "description": "This project involves building a structured database to store product details, user activities, and product categories. It includes creating a product database with attributes like name, price, and stock, along with a user database that tracks user profiles and interaction logs. Advanced SQL techniques such as joins, subqueries, and window functions are applied to generate personalized product recommendations, identify trending items, and analyze user behavior. The project aims to enhance the shopping experience by suggesting products that align with user preferences and behaviors, while also providing valuable insights into sales trends and popular products."
-    },
-    {
-        "title": "AI-Powered Chatbot for Career Advice",
-        "year": "2023",
-        "image": "https://techbullion.com/wp-content/uploads/2024/10/Ai-powered-Chatbot-2-scaled-1-1000x600.jpg",
-        "description": "An AI-powered chatbot was developed to provide personalized career recommendations based on user skills, interests, and industry trends. The system leveraged Natural Language Processing (NLP) to analyze user inputs and match them with relevant career paths. A knowledge base of job roles, required skills, and market demand was integrated, allowing the chatbot to offer data-driven insights. Machine learning techniques were applied to refine recommendations based on user feedback. The chatbot was deployed with an interactive interface, enabling dynamic conversations and real-time career guidance. This project highlights the potential of AI in career counseling and professional development."
-    },
-    {
-        "title": "Personal Finance Manager App",
-        "year": "2022",
-        "image": "https://thumbs.dreamstime.com/b/personal-finance-flat-design-icons-vector-illustration-various-money-48658776.jpg",
-        "description": "A cross-platform personal finance tracker was developed to help users manage expenses, track spending habits, and optimize budgets. The application categorizes transactions using natural language processing (NLP) and machine learning, providing personalized insights into spending patterns. Interactive dashboards visualize income, expenses, and savings trends, while predictive analytics suggest budget optimizations based on historical data. Secure authentication and encryption ensure data privacy, and cloud synchronization allows access across multiple devices. This tool empowers users to make informed financial decisions and improve their financial health."
-    },
-    {
-        "title": "Music Genre Classifier",
-        "year": "2023",
-        "image": "https://static.vecteezy.com/system/resources/thumbnails/043/193/741/small_2x/music-notes-with-dark-neon-light-effect-3d-rendering-video.jpg",
-        "description": "A machine learning model was developed to classify songs into genres based on key audio features such as tempo, pitch, and spectral content. The project involved preprocessing raw audio data, extracting relevant features using libraries like Librosa, and performing exploratory data analysis to understand genre-specific characteristics. Various classification models, including Random Forest, Support Vector Machines, and Neural Networks, were trained and evaluated for accuracy. Feature selection and hyperparameter tuning were conducted to optimize performance, with the best model achieving high classification accuracy. The project demonstrates the potential of audio analysis in music classification and recommendation systems."
-    },
-    {
-        "title": "Secure File Storage System",
-        "year": "2022",
-        "image": "https://media.licdn.com/dms/image/v2/C5112AQGGcdUB8gcszg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1541052132937?e=2147483647&v=beta&t=DdY-42Yp9jQIxGVDAoS9mZgGUDjHsmgRBI3NFHecZ1c",
-        "description": "Designed a cloud-based encrypted file storage system that allows users to securely upload, store, and retrieve files. Implemented end-to-end encryption to protect data privacy, ensuring only authorized users can access stored files. Developed a user authentication system with role-based access control to prevent unauthorized access. Integrated secure file-sharing functionality with temporary access links and expiration settings. Optimized storage efficiency with compression techniques and implemented logging mechanisms to track file activity for security auditing."
-    },
-    {
-        "title": "Fitness Tracking System",
-        "year": "2023",
-        "image": "https://media.hackerearth.com/blog/wp-content/uploads/2016/08/Image-1.1.png",
-        "description": "This project involves designing a database to store detailed user information, including workout logs, progress metrics, and nutrition plans. The database allows users to track their fitness journey by recording data such as exercise types, sets, reps, calories burned, and dietary intake. SQL queries are used to analyze workout trends, track calorie consumption, and evaluate the effectiveness of different exercises. Also incorporates indexing and partitioning techniques to handle large datasets efficiently, ensuring quick access to user-specific data and overall system performance. The system aims to provide users with insights into their fitness routines, helping them optimize workouts and nutrition plans for better results."
+        "title": "Classifying Schizophrenia",
+        "year": "2025",
+        "image": "https://1997bb66.delivery.rocketcdn.me/wp-content/uploads/2022/12/can-you-go-to-rehab-for-schizophrenia-light.jpg",
+        "description": "This project explores the use of EEG signal analysis to classify individuals with schizophrenia by detecting disruptions in corollary discharge, a neural mechanism often impaired in affected patients. Using a dataset of EEG recordings from 81 subjects—both patients and healthy controls—we preprocessed the data through filtering, baseline correction, artifact removal, and Independent Component Analysis (ICA). Key ERP features were extracted from 9 critical electrode sites, and feature selection was guided by ANOVA and spatial voltage difference metrics. A Linear SVM classifier was then trained to distinguish between the two groups, achieving an accuracy of 88%. This work demonstrates the data-driven diagnosis of schizophrenia and deepen the understanding of its cognitive impacts."
     }
 ]
