@@ -6,7 +6,7 @@
         "description": "An in-depth analysis of over 80,000 game statistics was conducted to determine whether banned champions tend to have higher win rates. This involved cleaning the dataset, performing univariate analysis on champion win rates and ban counts, and conducting bivariate analysis on pick rates, ban rates, and win rates to identify key patterns and trends. NMAR patterns were detected, and missingness in ban columns was tested, improving data reliability by 25%, which enhanced feature selection for downstream modeling. Additionally, a Random Forest Classifier was developed to predict a player’s league tier based on game statistics, achieving an accuracy of 93%."
     },
     {
-        "title": "Steam Game Recommendation System",
+        "title": "Steam Games Recommendation System",
         "year": "2025",
         "image": "https://www.pcworld.com/wp-content/uploads/2024/09/Steam-logo-on-top-of-a-background-full-of-Steam-library-games-1.jpg?quality=50&strip=all",
         "description": "A personalized game recommendation system was built using over 12,000 user-generated Steam reviews and detailed game metadata to match players with titles aligned to their tastes. Exploratory analysis revealed key trends in game popularity, review behavior, and user preferences. Feature engineering included one-hot encoding game tags, calculating sentiment scores from reviews, and normalizing playtime metrics. A Bayesian Network was constructed to model probabilistic relationships between user preferences, game features, and likelihood of recommendation. This approach enabled interpretable, data-driven recommendations that adapt to individual player behavior."
