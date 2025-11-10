@@ -20,7 +20,7 @@
     {
         "title": "Loan Approval Analysis for Young and Mid-Career Adults",
         "year": "2024",
-        "image": "https://lendingplate.com/blog/wp-content/uploads/2023/08/Instant-Loan-Approval.png",
+        "image": "https://media.istockphoto.com/id/1413481802/vector/approved-credit-bill-good-credit-score-receiving-loan-approval-from-bank-personal-finance.jpg?s=612x612&w=0&k=20&c=Nkcl92YeB6pcgo6MUo5YESYtUSoY0nyAo3YSi8FtiNs=",
         "description": "This project examines how employment length, income, loan amount, and education level affect loan approval rates for young adults (18-28) compared to mid-career adults (28-38). The analysis found that mid-career adults have higher loan approval and repayment rates due to greater financial stability. Education level did not significantly impact loan approval for young adults, highlighting the importance of income and employment history. Key predictors of loan approval include income, job stability, and loan purpose. The project suggests young adults focus on stable income and employment to improve loan approval chances."
     },
     {
@@ -44,7 +44,7 @@
     {
         "title": "Classifying Schizophrenia",
         "year": "2025",
-        "image": "https://1997bb66.delivery.rocketcdn.me/wp-content/uploads/2022/12/can-you-go-to-rehab-for-schizophrenia-light.jpg",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo88HzaFNLnzztiXyYG1yd-LxhRIWqGWMmCg&s",
         "description": "This project explores the use of EEG signal analysis to classify individuals with schizophrenia by detecting disruptions in corollary discharge, a neural mechanism often impaired in affected patients. Using a dataset of EEG recordings from 81 subjects—both patients and healthy controls—we preprocessed the data through filtering, baseline correction, artifact removal, and Independent Component Analysis (ICA). Key ERP features were extracted from 9 critical electrode sites, and feature selection was guided by ANOVA and spatial voltage difference metrics. A Linear SVM classifier was then trained to distinguish between the two groups, achieving an accuracy of 88%. This work demonstrates the data-driven diagnosis of schizophrenia and deepen the understanding of its cognitive impacts."
     }
 ]
